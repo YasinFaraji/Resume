@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper,roman]{moderncv}       
+
+
+
+\moderncvstyle{banking}                            
+\moderncvcolor{blue}                                
+\nopagenumbers{}                                  
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+\usepackage{import}
+
+% personal data
+\name{Mohammad}{Faraji}
+\address{Software Engineer}{}{}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+  \faEnvelopeO\enspace yasinfaraji100@gmail.com & \faMobile\enspace +989385545794 & \faMapMarker\enspace Tehran, Iran & \faCalendar\enspace 1999/12/06 \\  
+\end{tabular}
+\newline
+Profiles:    
+\href{https://www.linkedin.com/in/yasin-faraji-687567190/}{\faLinkedin} 
+ \href{https://stackoverflow.com/users/12030762/yasinfaraji}{\faStackOverflow}
+ \href{https://github.com/YasinFaraji}{\faGithub} 
+\end{center}
+
+\section{EXPERIENCE}
+
+{\customcventry{May  2020 -  Present - 7 month}{Software Engineer}{Sepehr Co}{Tehran, Iran}{}
+{\begin{itemize}
+  \item Spending Military Service in a Software company, work on developing desktop applications.
+\item Main used technologies: C++, Qt, MATLAB, Git, Gitlab 
+\end{itemize}
+}
+
+
+{\customcventry{June 2019 - April 2020 - 1 year}{Developer}{Rayan Khodro Co}{Tehran, Iran}{}
+{\begin{itemize}
+  \item During this period, I have been working on automotive diagnostics tools in one of the most reputable companies that make automotive diagnostics tools(Like a Diag device), which includes working on software and a little bit of hardware and network protocols.
+\item Main  Technologies used: C++, C#, keil uvision, automotive diagnostics tools 
+\end{itemize}
+}
+
+
+\section{EDUCATION}
+{\customcventry{2018-2022}{Bachelor's degree in Computer Software Engineering}{Islamic Azad University Tehran}{Tehran, Iran}{}{- 18.91 GPA}}
+
+{\customcventry{2016-2018}{High School Diploma in Math and Physics}{Mandegar Alborz Highschool}{Tehran, Iran}{}{- 18.85 GPA}}
+
+\section{SKILLS}
+\begin{minipage}{\maincolumnwidth}%
+  \small{
+      \begin{itemize}
+	  \item Proficient  in \textbf{C++}, \textbf{C++11}, \textbf{C++14}, \textbf{C++17}, \textbf{C++20 (new features)}
+          \item Experienced with \textbf{Linux}, \textbf{Ubuntu}, \textbf{CentOS}, \textbf{Red Hat}
+          \item Experienced with \textbf{Qt}
+          \item Experienced with \textbf{Git} and \textbf{Gitlab}
+	  \item Experienced with \textbf{Clean Code}
+	  \item Familiar with \textbf{SOLID}, \textbf{Design Pattern}
+	  \item Familiar with \textbf{Testing} and \textbf{Google Test(gtest)}
+	  \item Familiar with \textbf{MATLAB}
+	  \item Familiar with \textbf{Python}
+	  \item Familiar with \textbf{Unreal Engine}
+	  \item Familiar with \textbf{Docker}
+	  \item Familiar with Digital signal processing(DSP), Linear algebra
+	  \item Familiar with \textbf{Big Data}, \textbf{Hadoop ecosystem}
+	  \item Familiar with \textbf{Distributed systems} and \textbf{HDFS}
+	  \item Familiar with \textbf{Pig}, \textbf{Hive}, \textbf{Spark}, \textbf{kafka}
+	  \item Familiar with \textbf{SQL} and MySQL and PostgreSQL
+	  \item Familiar with \textbf{NoSQL} and MongoDB
+	  \item Familiar with \textbf{virtual machine}, \textbf{Oracle VM}, \textbf{Apache Ambari}
+          \item Good English communication skills
+          \item Rapid Learner and eager to learn new technologies
+    \end{itemize}}%
+\end{minipage}%
+      
+}
+
+}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} 
+
+
+
+\end{document}
+
+
