@@ -1,222 +1,125 @@
-\documentclass[11pt,a4paper,roman]{moderncv}       
-
-
+\documentclass[11pt,a4paper,sans]{moderncv}        
 
 \moderncvstyle{banking}                            
-\moderncvcolor{blue}                                
-\nopagenumbers{}                                  
-
+\moderncvcolor{blue}                               
+\nopagenumbers{}                                   
 
 \usepackage[utf8]{inputenc}
 \usepackage{fontawesome}
-\usepackage{tabularx}
-\usepackage{ragged2e}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.85]{geometry}
 \usepackage{multicol}
-\usepackage{import}
 
 % personal data
 \name{Mohammad}{Faraji}
-\address{Software Engineer}{}{}
-  
-\newcommand*{\customcventry}[7][.25em]{
-  \begin{tabular}{@{}l} 
-    {\bfseries #4}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\bfseries #5}
-  \end{tabular} \\
-  \begin{tabular}{@{}l} 
-    {\itshape #3}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\itshape #2}
-  \end{tabular}
-  \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-
-\newcommand*{\customcvproject}[4][.25em]{
-%   \vfill\noindent
-  \begin{tabular}{@{}l} 
-    {\bfseries #2}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\itshape #3}
-  \end{tabular}
-  \ifx&#4&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#4%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-
-\setlength{\tabcolsep}{12pt}
+\title{Software Engineer | C++ Developer}
+\address{}{Tehran, Iran}{} 
+\phone[mobile]{+98 938 554 5794}
+\email{yasinfaraji100@gmail.com}
+\social[linkedin]{yasin-faraji-687567190}
+\social[github]{YasinFaraji}
 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+
 \makecvtitle
-\vspace*{-23mm}
-
-\begin{center}
-\begin{tabular}{ c c c c }
-  \faEnvelopeO\enspace yasinfaraji100@gmail.com & \faMobile\enspace +989385545794 & \faMapMarker\enspace Tehran, Iran & \faCalendar\enspace 1999/12/06 \\  
-\end{tabular}
-\newline
-Profiles:    
-\href{https://www.linkedin.com/in/yasin-faraji-687567190/}{\faLinkedin}
- \href{https://github.com/YasinFaraji}{\faGithub} 
-\end{center}
-
 
 %----------------------------------------------------------------------------------------
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
-
-\section{SUMMARY}
-
-\cvitem{}{  Software Engineer,  C++ Developer,  Problem solving AND  +3 years of experience in C++ and Algorithms Mostly for system programming and desktop apps in Linux.}
-\cvitem{}{  In my opinion, programming is an inseparable part of my life, because it takes up most of my daily life.
-And when I am busy with this process and things like solving new problems, I don't notice the passage of time and this shows my passion and interest.
-One of the attractions of this specialty is that in addition to becoming more skilled and gaining more experience every day, there are always more things that can be learned.
-But in general, maintaining balance in work and life is very important. }
-
+\section{Summary}
+\cvitem{}{Dedicated Software Engineer with over 4 years of experience in system programming, algorithms, and desktop application development. Passionate about C++ and high-tech, precise, and sensitive projects. Experienced in delivering high-quality software solutions and striving for continuous improvement. Eager to contribute to impactful projects and work in a team where progress and influence are key motivations. Open to opportunities worldwide, with a willingness to relocate or accept visa sponsorship to contribute to innovative teams in a global environment.}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
-\section{EXPERIENCE}
-{\cventry{January  2021 -  January  2023 - 2 years}{Software Engineer}{Bontech Holding}{Tehran, Iran}{}
-{\begin{itemize}
-  \item  I have been working on the Telecommunications field. In addition to experience and general knowledge in this field, in particular, I have been responsible for the development, maintenance and improvement of important parts such as infrastructure cores and system distributors.
-  In this company, I got acquainted with many technologies and learned many things in them; first of all in Linux, then in things like containers and Docker, also things like Kafka and message broker. In addition to this, I also found relatively good experience and knowledge in Redis, which was the result of working on a project related to having a database that stores, processes and retrieves high-speed data.
-These were things minus the main work, i.e. programming. One of the important parts that added to my experience there was programming in Python effectively. So that 2 of the projects that I was responsible for developing and maintaining were with Python.
-It was also the longest C++ project in this company. Important projects such as SMS center and messaging router and other such cases.
-The experience of working in this environment is very informative because we always dealt with a large amount of data. And fast and simultaneous processing was much needed in these projects.
-In general, the customers of this company were messaging companies and internet service providers. (such as Hamrah-e Avval, MTN Irancell, Shatel, etc.)
-\item Main used technologies: C++, Python, Git, Linux, Threading, Concurrency, Docker, Kafka, redis, SQLite
-\end{itemize}
-}
-}
+\section{Experience}
+\cventry{May 2023 -- Present}{Software Engineer}{Sepanta Medical}{Tehran, Iran}{}{ 
+\begin{itemize} 
+  \item Contributed to the development of a cutting-edge ultrasound machine, leveraging modern C++ and Qt to create robust, high-performance software for the medical field. 
+  \item Implemented a real-time profiler using Tracy to monitor memory usage, detect leaks, and optimize performance, ensuring the product's stability before each release. 
+  \item Developed a fake hardware module to simulate ultrasound hardware, enabling independent testing by developers without requiring physical devices. 
+  \item Added critical product features, including a high-speed export system for scan data to USB/DVD, optimizing OS interactions for seamless user experiences. 
+  \item Integrated advanced UI elements, such as a dynamic Annotator for labeling ultrasound scans, using QML and C++ to enhance user interactivity. 
+\end{itemize}}
 
 
-{\cventry{May  2020 -  November  2020 - 7 months}{Software Engineer}{Sepehr Co}{Tehran, Iran}{}
-{\begin{itemize}
-  \item  I have been working on the military field and building desktop software and signal processing and telecommunications.
-  The first place where I have experience working with C++ version 11 and higher was in this company.
-Of course, one of the other advantages of this company was that it used the QT framework and it was very nice to work with this framework.
-In general, they worked there on signal processing and statistical topics.
-But one of the most interesting projects that I personally did there was that I designed and implemented a scheduler in which it was connected with the end user and had a relatively efficient user interface that, according to the user's input, in time It started recording or stopped recording a specified signal and also had the ability of long-term scheduling.
-Besides this, there was also the implementation of mathematical algorithms.
-\item Main used technologies: C++, Qt, MATLAB, Git, Threading, Concurrency
-\end{itemize}
-}
-}
+\cventry{Jan 2021 -- March 2023}{Software Engineer}{Bontech Holding}{Tehran, Iran}{}{ 
+\begin{itemize} 
+  \item Developed and maintained core infrastructure for high-performance telecom projects, focusing on scalability and reliability in the mobile communications sector. 
+  \item Utilized Linux, Docker, Kafka, and Redis to manage and optimize data flow, storage, and retrieval in high-throughput, low-latency environments. 
+  \item Implemented mission-critical systems for SMS center and messaging routers, with extensive use of multithreading, concurrency, and async programming in C++17 and Python. 
+  \item Ensured high availability and system stability, critical for maintaining uninterrupted mobile communication services. 
+  \item Contributed to a collaborative team environment, working with top engineers who have since joined reputable companies across the US and Europe. 
+\end{itemize}}
 
-{\cventry{June 2019 - April 2020 - 1 year}{Developer}{Rayan Khodro Co}{Tehran, Iran}{}
-{\begin{itemize}
-  \item  I have been working on automotive diagnostics tools in one of the most reputable companies that make automotive diagnostics tools(Like a Diag device), which includes working on software and a little bit of hardware and network protocols.
-  The most interesting part of working in that company was that a complete cycle of each project in that company included software, hardware and cars. and in this process, various challenges arose and it was very pleasant to finally see the output of the work.
-Of course, this was the case that made our work not only programming in that company, and getting involved with hardware and things related to cars and even communicating with people such as mechanics and car experts were also features of this experience.
-\item Main  Technologies used: C++, C Sharp, automotive diagnostics tools
-\end{itemize}
-}
-}
+
+\cventry{May 2020 -- Nov 2020}{Software Engineer}{Sepehr Co}{Tehran, Iran}{}{ 
+\begin{itemize} 
+  \item Designed and implemented a precise scheduling system for signal recording, using Linux-based algorithms for efficient resource allocation. 
+  \item Ensured system stability and reliability, enabling autonomous operation without supervision. 
+  \item Applied clean code and architecture practices, producing maintainable and readable code. 
+  \item Delivered over 4 technical presentations on topics like Concurrency, Multi-threading, Modern C++, and Clean Code during weekly knowledge-sharing sessions. 
+  \item Collaborated effectively with the team to foster continuous learning and skill development. 
+\end{itemize}}
+
+
+\cventry{Jun 2019 -- Apr 2020}{Software Developer}{Rayan Khodro Co}{Tehran, Iran}{}{ 
+\begin{itemize} 
+  \item Developed and optimized an automotive diagnostic tool, ensuring comprehensive troubleshooting support for both European and Chinese vehicle models. 
+  \item Led the implementation and full integration of diagnostic platforms for new vehicle models, including successful integration of Renault vehicles. 
+  \item Enhanced software reliability by resolving critical bugs, integrating hardware with C++, and ensuring system stability. 
+  \item Collaborated effectively with cross-functional teams to integrate software with vehicle hardware for seamless performance. 
+  \item Conducted thorough vehicle tests, validating software functionality and delivering high-quality, reliable results. 
+\end{itemize}}
+
 
 
 %----------------------------------------------------------------------------------------
-%	Voluntary-Activity SECTION
+%	VOLUNTARY WORK
 %----------------------------------------------------------------------------------------
+\section{Voluntary Activities (Open Source)}
+\textit{Passionate about contributing to open-source projects, leveraging skills in system programming and performance optimization.} 
 
-\section{Voluntary activity (open sousrce community)}
+\cventry{Mar 2022 -- Present}{Owner}{famOS (Operating System)}{GitHub}{}{
+\begin{itemize}
+  \item Designed and implemented a custom operating system with features inspired by Linux and Windows.
+  \item Developed bootloader, file system, and core components for a server-focused OS.
+  \item \href{https://github.com/YasinFaraji/famOS}{\textbf{GitHub Repository}}
+\end{itemize}}
 
-{\cventry{March 2022 - Now }{Owner}{famOS (Operating System)}{Github}{}
-{\begin{itemize}
-  \item  This project is related to the implementation of an operating system.
-  In this project, I tried to design and implement an operating system from the beginning and the base to a relatively complete state. Although this operating system is far from the current popular operating systems, it has been tried to be as similar as possible to an efficient and usable operating system.
-  This operating system is in parts similar to Linux and in parts similar to Microsoft Windows.
-  To run this operating system, you can use operating system simulators or boot it directly and run it on the hardware of a system in real form. Of course, this operating system does not have a graphical interface and is actually a server operating system.
-  In this project, I tried to implement all the necessary items of an operating system, including the boot loader, which is one of the important parts of an operating system.
-  Also, in other cases, for example, file system, etc., I tried to follow the standards.
-  Finally, it should be noted that this current operating system is not yet officially usable and is only an early version of a relatively standard operating system.
-  But this project was able to be completed and more efficient due to the type of design and implementation.
-\item \href{https://github.com/YasinFaraji/famOS}{\textbf{github repository}}
-\end{itemize}
-}
-}
-
-
-{\cventry{September 2021 }{Contributor}{Gambal (Monitors network, CPU and memory usages)}{Github}{}
-{\begin{itemize}
-  \item  The purpose of this project is to monitor network values (for example, Internet consumption, etc.), CPU and RAM.
-  This project is applicable only for Linux operating system (it is applicable in all Linux distributions).
-  This tool has a very simple and understandable user interface that can be useful for programmers and even ordinary people during the day.
-  The focus of this tool is to view the network (especially the download and upload amount of the Internet) and it is very light.
-  I only collaborated in part of this project. In general, I added a feature to this tool that when you use this feature, all the current values will be reset, but the past history will remain unchanged. This feature is used to view and check the network momentarily.
-\item \href{https://github.com/ashtum/gambal}{\textbf{github repository}}
-\end{itemize}
-}
-}
+\cventry{Sep 2021}{Contributor}{Gambal (Network, CPU, and Memory Monitoring)}{GitHub}{}{
+\begin{itemize}
+  \item Added a feature to reset real-time network statistics while preserving history in a lightweight Linux monitoring tool. 
+  \item Collaboration involved reviewing code, debugging, and ensuring compatibility with existing modules. 
+  \item \href{https://github.com/ashtum/gambal}{\textbf{GitHub Repository}} 
+\end{itemize}}
 
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
-\section{EDUCATION}
-\cventry{2018-2022}{Bachelor's degree in Computer Software Engineering}{Islamic Azad University Tehran}{Tehran, Iran}{}{- 18.11 GPA}
-
-\cventry{2016-2018}{High School Diploma in Math and Physics}{Mandegar Alborz Highschool}{Tehran, Iran}{}{- 18.85 GPA}
+\section{Education}
+\cventry{2018 -- 2022}{B.Sc. in Computer Software Engineering}{Islamic Azad University}{Tehran, Iran}{}{ 
+\begin{itemize} 
+  \item GPA: 18.11 / 20
+  \item Relevant coursework: Operating Systems, Algorithms, Software Engineering
+\end{itemize}}
+\cventry{2016 -- 2018}{High School Diploma in Math and Physics}{Mandegar Alborz High School}{Tehran, Iran}{}{GPA: 18.85 / 20}
 
 
 %----------------------------------------------------------------------------------------
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
-
-\section{SKILLS}
-\begin{minipage}{\maincolumnwidth}%
-  \small{
-      \begin{itemize}
-	  \item Experienced  in \textbf{C++}, \textbf{C++11}, \textbf{C++14}, and Familiar with \textbf{C++17}, \textbf{C++20 (new features)}
-          \item Experienced with \textbf{Linux}, \textbf{Ubuntu}, CentOS
-          \item Experienced with \textbf{Git} and Gitlab, Github
-	  \item Experienced with \textbf{Clean Code}
-	  \item Familiar with \textbf{SOLID}, \textbf{Design Pattern}
-    \item Familiar with \textbf{SQL} , MySQL , SQLite
-    \item Familiar with \textbf{NoSQL} , Redis
-	  \item Familiar with \textbf{Testing} and \textbf{Google Test(gtest)} and \textbf{TDD}
-	  \item Familiar with \textbf{Python}
-	  \item Familiar with \textbf{Docker}
-	  \item Familiar with \textbf{kafka}
-	  \item Familiar with \textbf{Qt}
-    \item Familiar with \textbf{Assembly} for Kernel Development
-	  \item Familiar with \textbf{MATLAB}
-	  \item Familiar with \textbf{Unreal Engine}
-          \item Good English communication skills
-          \item Rapid Learner and eager to learn new technologies
-    \end{itemize}}%
-\end{minipage}%
-      
-% }
-
-% }
-
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications} 
+\section{Skills}
+\cvitem{Programming Languages}{\textbf{C++ (11/14/17/20)}, Python, QML}
+\cvitem{Frameworks and Tools}{Git, Qt, Docker, Kafka, Redis, Tracy (profiling tool), Google Test}
+\cvitem{Databases}{SQLite, Redis}
+\cvitem{Operating Systems}{Linux (Ubuntu, Debian)}
+\cvitem{Core Technical Skills}{Multithreading, Concurrency, Profiling, System Optimization, Clean Code, SOLID, Design Patterns, TDD}
+\cvitem{Soft Skills}{Effective Teamwork, Technical Presentations, Rapid Learning, Mentoring Junior Developers, Strong Communication Skills}
 
 
 
 \end{document}
-
-
